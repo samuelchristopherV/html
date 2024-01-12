@@ -1,0 +1,624 @@
+/*
+COLOURS
+
+body{
+
+    background-color: black;
+}
+
+h1{
+    color: violet;
+}
+
+p{
+
+    color: blueviolet;
+}
+
+#p1{
+    color: green;
+}
+
+#p2{
+    color: rgb(52, 227, 225)
+}
+
+#p3{
+    color: #eb34eb;
+}
+
+#p4{
+    color: hsl(0, 100%, 50%)
+}
+
+h1{
+    font-family: Verdana, Arial,
+}
+
+#p1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+#p2{
+    font-weight: bold
+}
+
+#p3{
+    font-style: italic;
+}  
+
+#p4{
+    font-size: 2em;
+}
+
+BORDERS
+
+h1{
+    border-style: solid;border-color: blueviolet;border-width: 4px;border-radius: 10px;
+
+}
+
+p{
+    border-bottom: 3px solid red;
+    border-top: 3px outset greenyellow;
+    border-left: 3px double orchid;
+    border-right: 3px dotted aqua;
+}
+
+
+
+SHADOWS
+
+h1{
+    text-shadow: 4px 1px 5px green;
+
+}
+
+#box1{
+    width:200px;
+    height:200px;
+    background-color: blue;
+    box-shadow: 3px 3px 5px;
+
+} 
+
+
+MARGINS
+
+body{
+    margin: 0px;
+}
+
+.box{
+    border: 5px solid;
+    font-size: 1cm;
+    width: 100px;
+    height: 100px;
+    
+}
+
+#box1{
+    background-color: brown;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    
+}
+
+#box2{
+    background-color: green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+
+FLOATS
+
+body{
+    border: 3px solid;
+}
+
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+
+#img2{
+
+    float: right;
+    margin-left: 10px;
+    
+}   
+
+div{
+
+    border: 2px solid;
+    height:75px;
+    overflow:scroll
+}
+
+
+ DISPLAY PROPERTIES
+
+
+div{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    display:  inline-block;
+    visibility: hidden;
+}
+
+span{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+}
+
+
+HEIGHT & WIDTH
+.box{
+    border: 2px solid;
+    padding: 25px;
+    box-sizing: border-box;
+    height:auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+    max-width: 50%;
+    min-width: 75%;
+}
+
+POSITIONS
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    
+    
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    position:absolute ;
+    top: 50px;
+    left: 50px;
+}
+
+body{
+    background-image: url(images/IMG_20211203_112838.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.pagination{
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.pagination a.active {
+    background-color: green;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+
+.dropdown button {
+    background-color: yellow;
+    color:black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a {
+    display: block;
+    color: brown;
+    text-decoration: none;
+    padding: 10px 15px;
+    
+}
+
+.dropdown .content {
+    display: block;
+    position: absolute;
+    background-color: pink;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px;
+}
+
+.dropdown:hover.content{
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: green;
+}
+
+.dropdown a:hover {
+    background-color: blueviolet;
+}
+
+h1{
+    text-align: center;
+}
+
+.navbarul{
+    list-style-type:none;
+    background-color: violet;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    
+
+}
+
+.navbar a {
+    color: brown;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.navbar a:hover{
+    background-color: violet;
+}
+.navbar li{
+    float: none;
+}
+
+.container{
+    display: flex;
+    border: 10px solid;
+    height: 90vh;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    column-gap: 10em;
+    row-gap: 10em;
+    
+}
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 10px;
+}
+#box1{
+    background-color: blueviolet;
+    align-self: center;
+}
+#box2{
+    background-color: brown;
+    align-self:center flex-end;
+}
+#box3{
+    background-color: rgb(245, 245, 39);
+    align-self:flex-start;
+
+}
+#box4{
+    background-color: rgb(155, 198, 91);
+    align-self:flex-start;
+}
+*/
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
